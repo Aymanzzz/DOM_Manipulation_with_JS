@@ -237,11 +237,9 @@ seventhDiv.appendChild(seventhPara);
 seventhDiv.style.marginTop = 200 + "px";
 
 const str = "1111111111111111";
-let newStr = str.split("");
-console.log(newStr);
-let totalStr = newStr.reduce((acc, val) => acc + val);
+let total = str.split("").map(Number).reduce((acc, val) => acc + val);
 let xPara = document.createElement("p");
-xPara.innerText = `The total of str array using reduce() is  ${totalStr}`;
+xPara.innerText = `The total of str array using reduce() is  ${total}`;
 seventhDiv.appendChild(xPara);
 
 // // *******************************************************************************************************************************************
