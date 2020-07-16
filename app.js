@@ -238,6 +238,7 @@ seventhDiv.style.marginTop = 200 + "px";
 
 const str = "1111111111111111";
 let newStr = str.split("");
+console.log(newStr);
 let totalStr = newStr.reduce((acc, val) => acc + val);
 let xPara = document.createElement("p");
 xPara.innerText = `The total of str array using reduce() is  ${totalStr}`;
